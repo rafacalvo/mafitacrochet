@@ -1,0 +1,36 @@
+// About section
+#about {
+  background-color: #fff;
+  height: 40%;
+
+  .about-text {
+    // padding: 0 1.5rem;
+    align-items: center;
+    // justify-content: space-around;
+  }
+
+  .left,
+  .right {
+    flex: 1 1 0px;
+  }
+
+  .left {
+    margin-left: 2rem;
+    margin-right: 2rem;
+
+    @include breakpoint-down(small) {
+      margin-left: 0;
+      margin-right: 0;
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  li {
+    margin-left: 1.875rem;
+  }
+
+  i {
+    color: $secondaryColor;
+    margin-right: 0.3rem;
+  }
+}

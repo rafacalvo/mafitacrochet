@@ -1,0 +1,15 @@
+// Footer
+.footer {
+  background-color: $primaryColor;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1em 0 0.5em 0;
+  color: $bgColor;
+  font-size: 0.8em;
+
+  img {
+    margin-bottom: 0.8em;
+  }
+}

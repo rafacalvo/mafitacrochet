@@ -1,0 +1,93 @@
+.slideshow {
+  text-align: center;
+
+  img {
+    width: 50%;
+    border-radius: 7px;
+    margin: 0;
+
+    @include breakpoint-down(small) {
+      width: 100%;
+    }
+  }
+
+  .slideshow-container {
+    position: relative;
+  }
+
+  // Hide images by default
+  .slide {
+    display: none;
+  }
+
+  i {
+    font-size: 1rem;
+    color: $darkGray;
+  }
+
+  // Prev & Next buttons
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 60%;
+    width: 2rem;
+    height: 2rem;
+    background-color: $bgColor;
+    border: 2px solid $darkGray;
+    border-radius: 10px;
+    transition: 0.6s ease;
+    -webkit-transition: 0.6s ease;
+    -moz-transition: 0.6s ease;
+    -ms-transition: 0.6s ease;
+    -o-transition: 0.6s ease;
+    user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+
+    @include breakpoint-down(medium) {
+      display: none;
+    }
+  }
+
+  // Position the "prev" button to the left
+  .prev {
+    padding-right: 0.65em;
+    left: 20%;
+  }
+
+  // Position the "next" button to the right
+  .next {
+    right: 20%;
+    padding-left: 0.65em;
+    // margin-left: 2.9em;
+  }
+
+  // Buttons hover
+  .prev:hover,
+  .next:hover {
+    background-color: $thirdColor;
+  }
+
+  // Dots
+  .dot {
+    cursor: pointer;
+    height: 0.625rem;
+    width: 0.625rem;
+    margin: 0 0.125em;
+    background-color: none;
+    border: 2px solid $darkGray;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    -webkit-transition: background-color 0.6s ease;
+    -moz-transition: background-color 0.6s ease;
+    -ms-transition: background-color 0.6s ease;
+    -o-transition: background-color 0.6s ease;
+  }
+
+  .active,
+  .dot:hover {
+    background-color: $thirdColor;
+  }
+}

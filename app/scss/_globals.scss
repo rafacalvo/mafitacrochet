@@ -1,0 +1,283 @@
+@import 'variables';
+@import 'mixins';
+
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+  font-family: 'Rubik', sans-serif;
+  font-size: $font-main;
+  color: $darkerGray;
+  line-height: 1.875rem;
+  overflow-x: hidden;
+
+  &.noscroll {
+    overflow: hidden;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Open Sans', sans-serif;
+  color: $primaryColor;
+  margin-top: 0;
+  font-weight: 500;
+  line-height: 1.15;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.31rem;
+  margin-bottom: 3.5rem;
+  text-align: center;
+  font-family: 'Dancing Script', cursive;
+  font-style: italic;
+
+  @include breakpoint-up(large) {
+    font-size: $font-xxlg;
+  }
+}
+
+h2 {
+  font-size: 1.875rem;
+  font-weight: 500;
+  margin-bottom: 1.5625rem;
+
+  @include breakpoint-up(large) {
+    font-size: $font-xlg;
+    margin-bottom: 2.25rem;
+  }
+}
+
+h4 {
+  font-size: 1.125rem;
+  font-weight: 500;
+  margin-bottom: 1.5625rem;
+
+  @include breakpoint-up(large) {
+    font-size: $font-lg;
+    margin-bottom: 2.25rem;
+  }
+}
+
+h5 {
+  font-size: 1.125rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+
+  @include breakpoint-up(large) {
+    font-size: $font-med;
+    margin-bottom: 1.5625rem;
+  }
+}
+
+p {
+  line-height: 1.5;
+}
+
+a,
+a:visited,
+a:hover {
+  text-decoration: none;
+}
+
+// Spacing
+.container {
+  max-width: 69.375rem;
+  margin: 0 auto;
+
+  &--pall {
+    padding: 3.375rem 1.5rem;
+    // text-align: center;
+
+    @include breakpoint-up(large) {
+      padding-top: 4rem;
+      padding-bottom: 4rem;
+    }
+  }
+
+  &--py {
+    padding-top: 3.375rem;
+    padding-bottom: 3.375rem;
+
+    @include breakpoint-up(large) {
+      padding-top: 4rem;
+      padding-bottom: 4rem;
+    }
+  }
+
+  &--px {
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
+
+  &--pt {
+    padding-top: 3.375rem;
+
+    @include breakpoint-up(large) {
+      padding-top: 4rem;
+    }
+  }
+
+  &--pr {
+    padding-right: 1.5rem;
+  }
+
+  &--pb {
+    padding-bottom: 4.375rem;
+
+    @include breakpoint-up(large) {
+      padding-bottom: 6rem;
+    }
+  }
+
+  &--pl {
+    padding-left: 1.5rem;
+  }
+}
+
+// Flexbox styles
+.flex {
+  display: flex;
+
+  &-jc-c {
+    justify-content: center;
+  }
+
+  &-jcs-c {
+    @include breakpoint-down(small) {
+      justify-content: center;
+    }
+  }
+
+  &-jc-sb {
+    justify-content: space-between;
+  }
+
+  &-jc-sa {
+    justify-content: space-around;
+  }
+
+  &-jc-se {
+    justify-content: space-evenly;
+  }
+
+  &-ai-c {
+    align-items: center;
+  }
+
+  &-fc-c {
+    flex-direction: column;
+  }
+
+  &-fdm-c {
+    @include breakpoint-down(medium) {
+      flex-direction: column;
+    }
+  }
+
+  &-fds-c {
+    @include breakpoint-down(small) {
+      flex-direction: column;
+    }
+  }
+}
+
+// Lists styling
+ul {
+  list-style: none;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+}
+
+// Buttons
+.button {
+  margin: 2em 0 1em 0;
+  padding: 0.5em 2em;
+  border: 1px solid $secondaryColor;
+  border-radius: 8px;
+  background-color: $secondaryColor;
+  align-items: center;
+  text-align: center;
+  display: inline-block;
+  color: $darkGray;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  -webkit-transition: 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out;
+  -ms-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
+}
+
+.button:hover {
+  background-color: $primaryColor;
+  color: #fff;
+}
+
+.primary-button {
+  border: 2px solid $primaryColor;
+  background-color: $primaryColor;
+
+  @include breakpoint-down(small) {
+    margin-bottom: 0.75rem;
+  }
+}
+
+.secondary-button {
+  border: 2px solid $white;
+}
+
+// Visibility
+.hide-for-mobile {
+  // Hide for tablet & mobile devices
+  @include breakpoint-down(medium) {
+    display: none;
+  }
+}
+
+.hide-for-desktop {
+  // Hide for desktop viewport widths
+  @include breakpoint-up(large) {
+    display: none;
+  }
+}
+
+// Go Top
+#myBtn {
+  @include breakpoint-up(large) {
+    display: none;
+  }
+
+  @include breakpoint-down(medium) {
+    width: 40px;
+    height: 40px;
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 5;
+    border: 1px solid $white;
+    outline: none;
+    background-color: $secondaryColor;
+    color: $white;
+    cursor: pointer;
+    padding: 0.2rem;
+    border-radius: 50%;
+  }
+}

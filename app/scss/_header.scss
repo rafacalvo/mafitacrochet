@@ -1,0 +1,44 @@
+// Navbar
+header {
+  color: $primaryColor;
+  background-color: $primaryColor;
+
+  .navbar {
+    align-items: center;
+    padding: 0.5em 1.5em;
+
+    img {
+      margin-left: 2em;
+      width: 11.25rem;
+    }
+
+    .nav-items {
+      display: flex;
+      justify-content: space-around;
+      margin: 0.5em 2em;
+
+      @include breakpoint-down(small) {
+        text-align: center;
+        justify-content: center;
+      }
+    }
+
+    .nav-links {
+      a:hover {
+        border-bottom: 2px solid #fff;
+      }
+    }
+
+    .nav-links:nth-child(2) {
+      margin: 0 1.875rem;
+
+      @include breakpoint-down(small) {
+        margin: 1rem 0;
+      }
+    }
+
+    a {
+      color: #fff;
+    }
+  }
+}
