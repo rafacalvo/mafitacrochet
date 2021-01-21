@@ -1,234 +1,351 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0, telephone=no">
-   <meta name="google-site-verification" content="s49xtYkDk9-BJW-0v8D5UOtzRcjncdKKcGbLTpzMEVs" />
-   <!-- Security meta tag -->
-   <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src https://*; child-src 'none';"> -->
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, telephone=no"
+    />
+    <meta
+      name="google-site-verification"
+      content="s49xtYkDk9-BJW-0v8D5UOtzRcjncdKKcGbLTpzMEVs"
+    />
+    <!-- Security meta tag -->
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src https://*; child-src 'none';"> -->
 
-   <!-- Fonts -->
-   <link rel="preconnect" href="https://fonts.gstatic.com">
-   <link
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
       href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;600;700&family=Open+Sans:wght@600;700;800&family=Rubik:wght@300;400;500;600;700&display=swap"
-      rel="stylesheet">
-   <!-- CSS -->
-   <link rel="stylesheet" href="/dist/css/style.css">
-   <!-- Icons -->
-   <script src="https://kit.fontawesome.com/d6106b7600.js" crossorigin="anonymous"></script>
-   <!-- Favicon -->
-   <link rel="shortcut icon" href="/img/favicon.svg" type="image/x-icon">
+      rel="stylesheet"
+    />
+    <!-- CSS -->
+    <link rel="preload stylesheet" href="/dist/css/style.css.map" />
+    <!-- Icons -->
+    <script
+      src="https://kit.fontawesome.com/d6106b7600.js"
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/img/favicon.svg" type="image/x-icon" />
 
-   <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.js"></script>
-   <title>Mafita Crochet - Tejiendo Sueños.</title>
-</head>
-<body>
-   <!-- Go Top button -->
-   <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-chevron-up"></i></button>
+    <script
+      src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.js"
+      defer
+    ></script>
+    <title>Mafita Crochet - Tejiendo Sueños.</title>
+  </head>
+  <body>
+    <!-- Go Top button -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top">
+      <i class="fas fa-chevron-up"></i>
+    </button>
 
-   <!-- Navbar -->
-   <header>
+    <!-- Navbar -->
+    <header>
       <nav class="navbar container container--pall flex flex-jc-sb flex-fds-c">
-         <a class="logo" href="/"><img src="img/logo.svg" alt="logo" width="160"></a>
-         <ul class="nav-items flex-fds-c hide-for-mobile">
-            <li class="nav-links"><a href="#about">Sobre La Marca</a></li>
-            <li class="nav-links"><a href="#show-gallery">La Ropita</a></li>
-            <li class="nav-links"><a href="#contact">Contacto</a></li>
-         </ul>
+        <a class="logo" href="/"
+          ><img src="img/logo.svg" alt="logo" width="160"
+        /></a>
+        <ul class="nav-items flex-fds-c hide-for-mobile">
+          <li class="nav-links"><a href="#about">Sobre La Marca</a></li>
+          <li class="nav-links"><a href="#show-gallery">La Ropita</a></li>
+          <li class="nav-links"><a href="#contact">Contacto</a></li>
+        </ul>
       </nav>
-   </header>
+    </header>
 
-   <!-- Slideshow -->
-   <section class="slideshow  container container--pall flex flex-fds-c flex-jc-sb flex-fc-c">
+    <!-- Slideshow -->
+    <section
+      class="slideshow container container--pall flex flex-fds-c flex-jc-sb flex-fc-c"
+    >
       <div class="slideshow-container">
-         <h1>Tejiendo Sueños.</h1>
-         <!-- Images with number and caption test -->
-         <div class="slideshow">
-            <div class="slide fade">
-               <img src="img/slideshow/slide-1.jpeg" alt="A photo" loading="lazy">
-            </div>
-            <div class="slide fade">
-               <img src="img/slideshow/slide-2.jpeg" alt="A photo" loading="lazy">
-            </div>
-            <div class="slide fade">
-               <img src="img/slideshow/slide-3.jpeg" alt="A photo" loading="lazy">
-            </div>
-            <div class="slide fade">
-               <img src="img/slideshow/slide-4.jpg" alt="A photo" loading="lazy">
-            </div>
-            <div class="slide fade">
-               <img src="img/slideshow/slide-5.jpg" alt="A photo" loading="lazy">
-            </div>
-         </div>
-         <!-- Next & previous buttons -->
-         <button class="slide-btn prev" onclick="plusSlides(-1)"><i class="fas fa-2x fa-chevron-left"></i></button>
-         <button class="slide-btn next" onclick="plusSlides(1)"><i class="fas fa-2x fa-chevron-right"></i></button>
-
+        <h1>Tejiendo Sueños.</h1>
+        <!-- Images with number and caption test -->
+        <div class="slideshow">
+          <div class="slide fade">
+            <img
+              src="img/slideshow/slide-1.jpeg"
+              alt="A photo"
+              loading="lazy"
+            />
+          </div>
+          <div class="slide fade">
+            <img
+              src="img/slideshow/slide-2.jpeg"
+              alt="A photo"
+              loading="lazy"
+            />
+          </div>
+          <div class="slide fade">
+            <img
+              src="img/slideshow/slide-3.jpeg"
+              alt="A photo"
+              loading="lazy"
+            />
+          </div>
+          <div class="slide fade">
+            <img src="img/slideshow/slide-4.jpg" alt="A photo" loading="lazy" />
+          </div>
+          <div class="slide fade">
+            <img src="img/slideshow/slide-5.jpg" alt="A photo" loading="lazy" />
+          </div>
+        </div>
+        <!-- Next & previous buttons -->
+        <button class="slide-btn prev" onclick="plusSlides(-1)">
+          <i class="fas fa-2x fa-chevron-left"></i>
+        </button>
+        <button class="slide-btn next" onclick="plusSlides(1)">
+          <i class="fas fa-2x fa-chevron-right"></i>
+        </button>
       </div>
-
 
       <!-- The dots/circles -->
-      <div class="dots" style="text-align:center">
-         <span class="dot" onclick="currentSlide(1)"></span>
-         <span class="dot" onclick="currentSlide(2)"></span>
-         <span class="dot" onclick="currentSlide(3)"></span>
-         <span class="dot" onclick="currentSlide(4)"></span>
-         <span class="dot" onclick="currentSlide(5)"></span>
+      <div class="dots" style="text-align: center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
       </div>
-   </section>
+    </section>
 
-   <!-- About Section -->
-   <section id="about">
+    <!-- About Section -->
+    <section id="about">
       <div class="container container--pall">
-         <h2>Sobre La Marca:</h2>
-         <div class="about-text flex flex-jc-sb flex-fds-c">
-            <div class="left">
-               <p>Piezas tejidas a mano, a una sola aguja (crochet).  Hechas con cariño por María Fernanda González.</p>
-            </div>
-            <div class="right">
-               <p>Dentro de los materiales utlizados están:</p>
-               <ul>
-                  <li><i class="fas fa-mitten"></i> Hilo de algodón mercerizado (perlé).</li>
-                  <li><i class="fas fa-mitten"></i> Cinta de raso.</li>
-                  <li><i class="fas fa-mitten"></i> Botones de bebé.</li>
-                  <li><i class="fas fa-mitten"></i> Agujas de crochet.</li>
-               </ul>
-            </div>
-         </div>
+        <h2>Sobre La Marca:</h2>
+        <div class="about-text flex flex-jc-sb flex-fds-c">
+          <div class="left">
+            <p>
+              Piezas tejidas a mano, a una sola aguja (crochet). Hechas con
+              cariño por María Fernanda González.
+            </p>
+          </div>
+          <div class="right">
+            <p>Dentro de los materiales utlizados están:</p>
+            <ul>
+              <li>
+                <i class="fas fa-mitten"></i> Hilo de algodón mercerizado
+                (perlé).
+              </li>
+              <li><i class="fas fa-mitten"></i> Cinta de raso.</li>
+              <li><i class="fas fa-mitten"></i> Botones de bebé.</li>
+              <li><i class="fas fa-mitten"></i> Agujas de crochet.</li>
+            </ul>
+          </div>
+        </div>
       </div>
-   </section>
+    </section>
 
-   <!-- Show gallery -->
-   <section class="show-gallery container container--pall" id="show-gallery">
-         <h2>La Ropita:</h2>
-         <!-- Gallery Grid -->
-         <p>Una pequeña muestra de lo que se ha hecho y se puede hacer:</p>
-         <div class="gallery" id="gallery">
-            <div class="gallery-item">
-               <div class="content">
-                  <img src="/img/gallery/showg-1.jpg" alt="Some picture" loading="lazy">
-               </div>
-            </div>
-            <div class="gallery-item">
-               <div class="content">
-                  <img src="/img/gallery/showg-2.jpg" alt="Some picture" loading="lazy">
-               </div>
-            </div>
-            <div class="gallery-item">
-               <div class="content">
-                  <img src="/img/gallery/showg-3.jpeg" alt="Some picture" loading="lazy">
-               </div>
-            </div>
-            <div class="gallery-item">
-               <div class="content">
-                  <img src="/img/gallery/showg-4.jpg" alt="Some picture" loading="lazy">
-               </div>
-            </div>
-            <div class="gallery-item">
-               <div class="content">
-                  <img src="/img/gallery/showg-5.jpeg" alt="Some picture" loading="lazy">
-               </div>
-            </div>
-            <div class="gallery-item">
-               <div class="content">
-                  <img src="/img/gallery/showg-6.jpg" alt="Some picture" loading="lazy">
-               </div>
-            </div>
-            <div class="gallery-item">
-               <div class="content">
-                  <img src="/img/gallery/showg-7.jpg" alt="Some picture" loading="lazy">
-               </div>
-            </div>
-            <div class="gallery-item">
-               <div class="content">
-                  <img src="/img/gallery/showg-8.jpeg" alt="Some picture" loading="lazy">
-               </div>
-            </div>
-            <div class="gallery-item">
-               <div class="content">
-                  <img src="/img/gallery/showg-9.jpeg" alt="Some picture" loading="lazy">
-               </div>
-            </div>
-            <div class="gallery-item">
-               <div class="content">
-                  <img src="/img/gallery/showg-10.jpeg" alt="Some picture" loading="lazy">
-               </div>
-            </div>
-            <div class="gallery-item">
-               <div class="content">
-                  <img src="/img/gallery/showg-11.jpeg" alt="Some picture" loading="lazy">
-               </div>
-            </div>
-         </div>
+    <!-- Show gallery -->
+    <section class="show-gallery container container--pall" id="show-gallery">
+      <h2>La Ropita:</h2>
+      <!-- Gallery Grid -->
+      <p>Una pequeña muestra de lo que se ha hecho y se puede hacer:</p>
+      <div class="gallery" id="gallery">
+        <div class="gallery-item">
+          <div class="content">
+            <img
+              src="/img/gallery/showg-1.jpg"
+              alt="Some picture"
+              loading="lazy"
+            />
+          </div>
+        </div>
+        <div class="gallery-item">
+          <div class="content">
+            <img
+              src="/img/gallery/showg-2.jpg"
+              alt="Some picture"
+              loading="lazy"
+            />
+          </div>
+        </div>
+        <div class="gallery-item">
+          <div class="content">
+            <img
+              src="/img/gallery/showg-3.jpeg"
+              alt="Some picture"
+              loading="lazy"
+            />
+          </div>
+        </div>
+        <div class="gallery-item">
+          <div class="content">
+            <img
+              src="/img/gallery/showg-4.jpg"
+              alt="Some picture"
+              loading="lazy"
+            />
+          </div>
+        </div>
+        <div class="gallery-item">
+          <div class="content">
+            <img
+              src="/img/gallery/showg-5.jpeg"
+              alt="Some picture"
+              loading="lazy"
+            />
+          </div>
+        </div>
+        <div class="gallery-item">
+          <div class="content">
+            <img
+              src="/img/gallery/showg-6.jpg"
+              alt="Some picture"
+              loading="lazy"
+            />
+          </div>
+        </div>
+        <div class="gallery-item">
+          <div class="content">
+            <img
+              src="/img/gallery/showg-7.jpg"
+              alt="Some picture"
+              loading="lazy"
+            />
+          </div>
+        </div>
+        <div class="gallery-item">
+          <div class="content">
+            <img
+              src="/img/gallery/showg-8.jpeg"
+              alt="Some picture"
+              loading="lazy"
+            />
+          </div>
+        </div>
+        <div class="gallery-item">
+          <div class="content">
+            <img
+              src="/img/gallery/showg-9.jpeg"
+              alt="Some picture"
+              loading="lazy"
+            />
+          </div>
+        </div>
+        <div class="gallery-item">
+          <div class="content">
+            <img
+              src="/img/gallery/showg-10.jpeg"
+              alt="Some picture"
+              loading="lazy"
+            />
+          </div>
+        </div>
+        <div class="gallery-item">
+          <div class="content">
+            <img
+              src="/img/gallery/showg-11.jpeg"
+              alt="Some picture"
+              loading="lazy"
+            />
+          </div>
+        </div>
+      </div>
       <!-- "See more" button -->
       <a href="gallery.html" class="button">Ver más</a>
-   </section>
+    </section>
 
-   <!-- Contact section -->
-   <section id="contact">
+    <!-- Contact section -->
+    <section id="contact">
       <div class="container container--pall">
-         <h2>Contacto:</h2>
-         <div class="full-contact flex flex-jc-sb flex-fdm-c">
-            <div class="left-container flex flex-fc-c">
-               <p>Puedes enviar un mensaje:</p>
-               <div class="form-container">
-                  <form name="contact" method="POST" data-netlify="true">
-                     <div class="row1 flex flex-fc-c">
-                        <p>
-                           <label for="name">Nombre:</label>
-                           <input type="text" name="name" id="name" placeholder="Nombre completo" required="required" size="80" />
-                        </p>
-                        <p>
-                           <label for="tel">Teléfono:</label>
-                           <input type="tel" name="tel" id="tel" placeholder="Teléfono (opcional)" />
-                        </p>
-                     </div>
-                     <div class="row2">
-                        <p>
-                           <label for="email">Email:</label>
-                           <input type="email" name="email" id="email" placeholder="Email" required="required" />
-                        </p>
-                     </div>
+        <h2>Contacto:</h2>
+        <div class="full-contact flex flex-jc-sb flex-fdm-c">
+          <div class="left-container flex flex-fc-c">
+            <p>Puedes enviar un mensaje:</p>
+            <div class="form-container">
+              <form name="contact" method="POST" data-netlify="true">
+                <div class="row1 flex flex-fc-c">
+                  <p>
+                    <label for="name">Nombre:</label>
+                    <input
+                      type="text"
+                      name="name"
+                      id="name"
+                      placeholder="Nombre completo"
+                      required="required"
+                      size="80"
+                    />
+                  </p>
+                  <p>
+                    <label for="tel">Teléfono:</label>
+                    <input
+                      type="tel"
+                      name="tel"
+                      id="tel"
+                      placeholder="Teléfono (opcional)"
+                    />
+                  </p>
+                </div>
+                <div class="row2">
+                  <p>
+                    <label for="email">Email:</label>
+                    <input
+                      type="email"
+                      name="email"
+                      id="email"
+                      placeholder="Email"
+                      required="required"
+                    />
+                  </p>
+                </div>
 
-                     <div class="row3">
-                        <p>
-                           <label for="message">Mensaje:</label>
-                           <textarea id="message" name="message" placeholder="Escribe tu mensaje aquí" required="required"
-                              maxlength="280"></textarea>
-                        </p>
-                     </div>
-                     <p>
-                        <button type="submit">Enviar</button>
-                     </p>
-                  </form>
-
-               </div>
+                <div class="row3">
+                  <p>
+                    <label for="message">Mensaje:</label>
+                    <textarea
+                      id="message"
+                      name="message"
+                      placeholder="Escribe tu mensaje aquí"
+                      required="required"
+                      maxlength="280"
+                    ></textarea>
+                  </p>
+                </div>
+                <p>
+                  <button type="submit">Enviar</button>
+                </p>
+              </form>
             </div>
-            <div class="right-container  flex flex-jc-sb flex-fds-c">
-               <div class="contact-info">
-                  <p>O puedes hacer consultas y/o encargos directamente en:</p>
-                  <div class="more-contact flex flex-fc-c">
-                     <a href="tel:+58-412-5857774"><i class="fab fa-whatsapp" target="_blank" rel="noopener noreferrer" rel="nofollow"></i>
-                        +58 412-5857774</a>
-                     <a href="https://www.instagram.com/mafitacrochet/" target="_blank"><i class="fab fa-instagram"
-                           rel="noopener noreferrer"></i> @mafitacrochet</a>
-                  </div>
-               </div>
+          </div>
+          <div class="right-container flex flex-jc-sb flex-fds-c">
+            <div class="contact-info">
+              <p>O puedes hacer consultas y/o encargos directamente en:</p>
+              <div class="more-contact flex flex-fc-c">
+                <a href="tel:+58-412-5857774"
+                  ><i
+                    class="fab fa-whatsapp"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    rel="nofollow"
+                  ></i>
+                  +58 412-5857774</a
+                >
+                <a
+                  href="https://www.instagram.com/mafitacrochet/"
+                  target="_blank"
+                  ><i class="fab fa-instagram" rel="noopener noreferrer"></i>
+                  @mafitacrochet</a
+                >
+              </div>
             </div>
-         </div>
+          </div>
+        </div>
       </div>
-   </section>
+    </section>
 
-   <!-- Footer -->
-   <footer class="footer">
-      <a href="/"><img src="img/logo.svg" alt="logo" width="150"></a>
+    <!-- Footer -->
+    <footer class="footer">
+      <a href="/"><img src="img/logo.svg" alt="logo" width="150" /></a>
       <p>©Mafita Crochet. Todos los derechos reservados.</p>
-   </footer>
+    </footer>
 
-   <!-- More Icons -->
-   <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+    <!-- More Icons -->
+    <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
 
-   <!-- JavaScript -->
-   <script src="/app/js/main.js"></script>
-</body>
+    <!-- JavaScript -->
+    <script src="/app/js/main.js" defer></script>
+  </body>
 </html>
